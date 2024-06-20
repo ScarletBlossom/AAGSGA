@@ -168,7 +168,7 @@ class Genetic_Algorithm(nn.Module):
 
 
 
-    def forward(self,epoch=30):
+    def forward(self,epoch=40):
         print('正在初始化种群......')
         self.initial_population()
 
@@ -190,7 +190,7 @@ class Genetic_Algorithm(nn.Module):
                 child1 = self.mutation(child1)
                 child2 = self.mutation(child2)
                 count_limit += 1
-                print(child1.sum())
+                # print(child1.sum())
                 population_size = 0
 
                 if child1.sum() <= int(self.edge_num*self.ptb_rate):
