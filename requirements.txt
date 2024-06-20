@@ -1,0 +1,5 @@
+deeprobust==0.2.7
+numpy==1.24.2
+torch @ http://download.pytorch.org/whl/cu118/torch-2.0.0%2Bcu118-cp38-cp38-linux_x86_64.whl
+torch-geometric==2.5.3
+
